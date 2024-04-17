@@ -1,0 +1,14 @@
+<!--pages/searchwifi/searchwifi.wxml-->
+<view>
+  <scroll-view scroll-y style="width:690rpx;height:{{list_height}}rpx">
+    <block wx:for="{{wifiList}}" wx:key="SSID">
+      <view class="list-item" id="{{item.SSID}}" bindtap="selectWifi">
+        <view style="display:flex;flex-direction:column;width:80%">
+          <text style="font-size:medium;word-break:break-all">设备名称: {{item.name}}</text>
+        </view>
+        <image style="width:36px;height:36px" mode="aspectFit" src="/images/network.png"></image>
+      </view>
+    </block>
+  </scroll-view>
+  <button type="primary" class="button" loading="{{searching}}" bindtap="Search">{{searching?"搜索中...":"搜索wif设备"}}</button>
+</view>

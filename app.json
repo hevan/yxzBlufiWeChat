@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/device/device",
+    "pages/searchwifi/searchwifi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "xBlufi蓝牙配网",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f8f8f8"
+  },
+  "sitemapLocation": "sitemap.json"
+}
